@@ -1,0 +1,138 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;1,100;1,300&family=Open+Sans:ital,wght@0,700;1,300&family=Roboto:wght@100&display=swap');
+
+
+:root{
+    --primary-color:#22254b;
+    --secondary-color:#373b69;
+
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--primary-color);
+    font-family: 'Poppins', sans-serif;
+}
+
+header{
+    padding: 1rem;
+    display: flex;
+    justify-content: flex-end;
+    border-radius: var(--primary-color);
+}
+
+.search{
+    background-color: transparent;
+    border-radius: 50px;
+    border: 2px solid var(--secondary-color);
+    font-family: inherit;
+    border-radius: 50px;
+    padding: 0.5rem 1rem;
+    color:#fff;
+}
+
+.search::placeholder{
+    color:#7378c5;
+}
+
+.search:focus{
+    outline: none;
+    background-color: var(--secondary-color);
+}
+
+main{
+    display: flex;
+    flex-wrap: wrap;
+    color:#ccc;
+    justify-content: center;
+    
+   
+}
+
+.movie{
+    width:300px;
+    margin: 1rem;
+    background-color: var(--secondary-color);
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.movie img{
+    width: 100%;
+}
+
+.movie-info{
+    color:#ccc;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 1rem 1rem;
+}
+
+.movie-info span{
+    background-color: var(--primary-color);
+    padding: 0.25rem 0.5rem;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.movie-info span.green{
+    color:lightgreen;
+}
+
+
+
+.movie-info span.yellow{
+    color:yellow;
+}
+
+.movie-info span.red{
+    color:red;
+}
+
+.overview{
+    background-color: black;
+    color: #ccc;
+    padding: 2rem;
+    position: absolute;
+    height: 100%;
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    max-width: 100%;
+    transform: translateY(101%);
+    transition: all ease-in 3ms;
+    font-size: 14px;
+    text-align: justify;
+}
+
+.overview h3{
+    text-align: start;
+}
+
+.movie:hover .overview{
+    transform: translateY(0);
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    height: 80px;
+    
+    
+  
+
+}
+
+footer h3{
+    color: #ccc;
+    
+    
+    
+}
