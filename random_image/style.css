@@ -13,6 +13,16 @@ body{
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    background-color: #ccc;
+}
+
+.title{
+    text-transform: uppercase;
+    color: #007667;
+}
+
+.title:hover{
+   color: rgb(116, 21, 116);
 }
 
 
@@ -22,10 +32,13 @@ body{
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    max-width: 1000px;
 }
 .container img{
     object-fit: cover;
     height: 300px;
     width: 300px;
     margin: 10px;
+    transition: all ease-in 3ms;
 }
+
