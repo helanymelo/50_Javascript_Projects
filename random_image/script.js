@@ -1,6 +1,7 @@
 
 const container = document.querySelector('.container')
 const BASE_URL = 'https://source.unsplash.com/featured/'
+
 const rows = 10
 
 for(let i = 0; i < rows * 3; i++){
